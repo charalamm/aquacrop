@@ -15,8 +15,8 @@ from aquacrop.utils import prepare_weather, get_filepath
 
 weather_file_path = get_filepath('tunis_climate.txt')
 model_os = AquaCropModel(
-            sim_start_time=f"{1979}/10/01",
-            sim_end_time=f"{1985}/05/30",
+            sim_start_time="1979/10/01",
+            sim_end_time="1985/05/30",
             weather_df=prepare_weather(weather_file_path),
             soil=Soil(soil_type='SandyLoam'),
             crop=Crop('Wheat', planting_date='10/01'),
@@ -31,9 +31,9 @@ print(model_results)
 
 AquaCrop-OSPy is a python implementation of the popular crop-water model AquaCrop, built from the AquaCrop-OS source code.
 
-AquaCrop-OS, an open source version of FAO’s multi-crop model, was released in August 2016 and is the result of collaboration between researchers at the University of Manchester, Water for Food Global Institute, U.N. Food and Agriculture Organization, and Imperial College London.
+AquaCrop-OS, an open source version of FAO's multi-crop model, was released in August 2016 and is the result of collaboration between researchers at the University of Manchester, Water for Food Global Institute, U.N. Food and Agriculture Organization, and Imperial College London.
 
-AquaCrop-OSPy has been designed in way that users can conduct cutting edge research with only basic python experience. In particular for the design and testing of irrigation stratgeies.
+AquaCrop-OSPy has been designed in way that users can conduct cutting edge research with only basic python experience. In particular for the design and testing of irrigation strategies.
 
 Open access journal article <a href=https://doi.org/10.1016/j.agwat.2021.106976> here </a>
 
